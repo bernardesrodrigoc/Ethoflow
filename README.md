@@ -1,6 +1,7 @@
 # Ethoflow
 A computer vision and artificial intelligence-based software for automatic behavior analysis
 
+[![DOI](https://zenodo.org/badge/281779165.svg)](https://zenodo.org/badge/latestdoi/281779165)
 __________________________________________________________________
 Authors:
    
