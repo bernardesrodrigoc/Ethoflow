@@ -13,6 +13,11 @@ Authors:
   
   - PhD Raul Narciso Carvalho Guedes (Federal University of Vicosa).
   
-  
+  ## Started
+  + Install python directly from python.org (This will already come with pip)
+  + install virtualenv $\Rightarrow$ open the prompt and run: pip install virtualenv
+  + Create a virtual environment - virtualenv path\path... 
+  + Inside the Ethoflow/ folder, install dependencies by running:
+    pip install -r requirements.txt
   
   
