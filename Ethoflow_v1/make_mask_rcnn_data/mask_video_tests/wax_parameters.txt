@@ -1,0 +1,15 @@
+tresh =35
+max_area =3000.0
+min_area =200.0
+max_len =300.0
+min_len =18.0
+n_obj =1
+crop_distance =490.0
+distance_scale =852.0
+distance_scale_know =25.0
+interaction_threshold =0.8
+thersh_min_mov =0.02
+thersh_max_mov =0.3
+max_prop =30.0
+min_prop =2.0
+frame_resolution =100
