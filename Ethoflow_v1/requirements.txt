@@ -1,6 +1,6 @@
 pandas
 numpy
-tensorflow-gpu==1.14.0 
+tensorflow-gpu==1.15.2 
 matplotlib
 opencv-python
 scipy
