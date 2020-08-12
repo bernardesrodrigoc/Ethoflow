@@ -67,4 +67,7 @@ This repository contains
   * Dataset: files used in manuscript
   
        + data_software_application: data from behavioral assay in Ethoflow validation 
-       + data from software performance associated with The fps and centrality of individuals 
+       + fps_network_ind: data from software performance associated with the fps and centrality of individuals
+       + processing_velocity: data from software performance associated with the resolution and number of individuals
+       + detection_rate: data from software performance associated with the detection rate
+       
