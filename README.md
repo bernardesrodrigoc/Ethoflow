@@ -1,3 +1,8 @@
+<img src="https://github.com/bernardesrodrigoc/Ethoflow/blob/master/Ethoflow_v1/complex_behavior/redes_local/icon/logo_ethoflow.png" alt="Ethoflow" width="350"
+         height="90"></b></marquee>
+
+
+
 # Ethoflow
 A computer vision and artificial intelligence-based software for automatic behavior analysis
 
