@@ -13,7 +13,7 @@ import numpy as np
 import cv2
 from threading import Thread
 from queue import Queue
-from utils import video_back_simple, video_back_complex
+from utils import video_back_simple
 
 class videoprocess:
             def __init__(self, frame, distance, x,y,h,w):

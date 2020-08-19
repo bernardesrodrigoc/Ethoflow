@@ -1,14 +1,11 @@
-"""
-See readme for information about this file.
-Ethoflow: computer vision and artificial intelligence-based software for automatic behavior analysis
-v 1.0
+# -*- coding: utf-8 -*-
 
-DOI: 10.1101/2020.07.23.218255
-LicenseCC BY-NC-ND 4.0
+# Form implementation generated from reading ui file 'gui.ui'
+#
+# Created by: PyQt5 UI code generator 5.12.3
+#
+# WARNING! All changes made in this file will be lost!
 
-@developer: Rodrigo Cupertino Bernardes
-https://www.researchgate.net/profile/Rodrigo_Cupertino_Bernardes
-"""
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
@@ -2286,7 +2283,7 @@ class Ui_ethoflow(object):
         ethoflow.addTab(self.tab_2, "")
 
         self.retranslateUi(ethoflow)
-        ethoflow.setCurrentIndex(2)
+        ethoflow.setCurrentIndex(0)
         self.combo_roi.setCurrentIndex(-1)
         self.roi_shape_crop.setCurrentIndex(-1)
         self.thresh_option.setCurrentIndex(0)
