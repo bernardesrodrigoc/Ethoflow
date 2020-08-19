@@ -1,11 +1,18 @@
+<img src="https://github.com/bernardesrodrigoc/Ethoflow/blob/master/Ethoflow_v1/complex_behavior/redes_local/icon/logo_ethoflow.png" alt="Ethoflow" width="350"
+         height="90"></b></marquee>
+
+
+
 # Ethoflow
 A computer vision and artificial intelligence-based software for automatic behavior analysis
 
 **Please cite our manuscript:**
 
-Bernardes, R. C., Lima, M. A. P., Guedes, R. N. C., & Martins, G. F. (2020). Ethoflow: computer vision and artificial intelligence-based software for automatic behavior analysis. BioRxiv, 2020.07.23.218255. doi:10.1101/2020.07.23.218255
+Bernardes, R. C., Lima, M. A. P., Guedes, R. N. C., & Martins, G. F. (2020). Ethoflow: computer vision and artificial intelligence-based software for automatic behavior analysis. BioRxiv, 2020.07.23.218255. [doi:10.1101/2020.07.23.218255](https://www.biorxiv.org/content/10.1101/2020.07.23.218255v1)
 
 DOI of the data: [![DOI](https://zenodo.org/badge/281779165.svg)](https://zenodo.org/badge/latestdoi/281779165)
+
+LicenseCC BY-NC-ND 4.0
 __________________________________________________________________
 Authors:
    
