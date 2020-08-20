@@ -45,7 +45,7 @@ This repository contains
       + images: icons and images of the graphical user interface (GUI)
       + Ethoflow: It is the main script
       + gui: The information regarding the GUI 
-      + utils
+      
       
       + make_mask_rcnn_data: folders were the files to generate instance segmentation model train data with an heuristic 
            + backgorunds: folder where random backgrounds should be placed to Ethoflow get.
