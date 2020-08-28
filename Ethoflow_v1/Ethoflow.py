@@ -142,7 +142,7 @@ class AppWindow(QtWidgets.QTabWidget):
         self.meas_now = list(np.zeros((self.n_ind,2))) 
         
         
-        self.kernel= cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(3,3))    
+        self.kernel= cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(5,5))    
         self.kernel1= cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(3,3))
         
         
@@ -218,8 +218,8 @@ class AppWindow(QtWidgets.QTabWidget):
         #self.filename= QFileDialog.getSaveFileName(self,"Arquivo de Log", "","All Files (*)")
         self.filename=self.filename[0]
                        
-        
-        
+    
+    
     def closeEvent(self):
         """Generate 'question' dialog on clicking 'X' button in title bar.
 
@@ -2601,11 +2601,11 @@ class AppWindow(QtWidgets.QTabWidget):
         
         self.capturing = True
         
-        if not os.path.exists('./train_imgs_behaviour/1/'):
-            os.makedirs('./train_imgs_behaviour/1/')
+        if not os.path.exists('./complex_behavior/train_imgs_behaviour/1/'):
+            os.makedirs('./complex_behavior/train_imgs_behaviour/1/')
             
-        if not os.path.exists('./train_imgs_behaviour/2/'):
-            os.makedirs('./train_imgs_behaviour/2/')                     
+        if not os.path.exists('./complex_behavior/train_imgs_behaviour/2/'):
+            os.makedirs('./complex_behavior/train_imgs_behaviour/2/')                     
         
         cap = cv2.VideoCapture(self.filename)       
         
@@ -2762,11 +2762,11 @@ class AppWindow(QtWidgets.QTabWidget):
                     #estimated_body_lengths[i] >= self.min_len_est and estimated_body_lengths[i] <= self.max_len_est and areas[i] >= self.min_area_est and areas[i] <= self.min_area_est
                     if estimated_body_lengths[i] >= self.min_len_est and estimated_body_lengths[i] <= self.max_len_est and areas[i] >= self.min_area_est and areas[i] <= self.max_area_est:
                               
-                        cv2.imwrite('./train_imgs_behaviour/1/' +str(len(beh1_countours))+'.png', miniframes[i])
+                        cv2.imwrite('./complex_behavior/train_imgs_behaviour/1/' +str(len(beh1_countours))+'.png', miniframes[i])
                         beh1_countours.append(contours[i])
                     else:
                         if len(beh2_countours) < int(self.ui.n_behaviour_2.text()):
-                            cv2.imwrite('./train_imgs_behaviour/2/' +str(len(beh2_countours))+'.png', miniframes[i])
+                            cv2.imwrite('./complex_behavior/train_imgs_behaviour/2/' +str(len(beh2_countours))+'.png', miniframes[i])
                             beh2_countours.append(contours[i])
                     
                                        

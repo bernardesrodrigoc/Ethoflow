@@ -31,8 +31,8 @@ def colour_to_thresh(frame,threshold,kernel,kernel1,thr_option):
     
     
    # R=cv2.equalizeHist(x)
-    R=x
-    gray=R
+    #R=x
+    gray=x
     
     gray_nor=((gray.copy()/np.mean(gray)))
 
@@ -40,7 +40,7 @@ def colour_to_thresh(frame,threshold,kernel,kernel1,thr_option):
     gray_nor = np.uint8(gray_nor)
                 
     R=cv2.medianBlur(gray_nor,3)
-    #R = cv2.blur( R,(13,13))
+    #R = cv2.blur( R,(21,17))
     
     
     
