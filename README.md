@@ -44,27 +44,33 @@ This repository contains
   
       + images: icons and images of the graphical user interface (GUI)
       + Ethoflow: It is the main script
-      + gui: The information regarding the GUI 
+      + gui: The information regarding the GUI
+      + requirements.txt: file to install the libraries. **Obs.:** open the virtual environment, locate the requirements.txt and install by running
+      
+      `pip install -r requirements.txt`
       
       
-      + make_mask_rcnn_data: folders were the files to generate instance segmentation model train data with an heuristic 
+      
+      
+      + make_mask_rcnn_data: files to generate training data for the instance segmentation model with an heuristic 
            + backgorunds: folder where random backgrounds should be placed to Ethoflow get.
            + mask_imgs: folder where Ethoflow saves the images to train instance segmentation model
            + mask_video_tests: video example to Ethoflow run heurist and to test after training
            + train: examples of the images generate to train Ethoflow to recognize bees (*Melipona quadrifasciata*) in random background
-           + val: examples of the images generate to validate Ethoflow in recognition of the bees (*M. quadrifasciata*) in random background
-           
+           + val: examples of the images generate to validate Ethoflow in recognition of the bees (*M. quadrifasciata*) in random background.          
             **Obs.:** after generate images, paste to:  train_mask_rcnn/Mask_RCNN/dataset
 
+      + mask_rcnn: files needed to Ethoflow perform instance segmentation in video.
+      
       + train_mask_rcnn: After generate the dataset (in make_mask_rcnn_data), we recommend upload this folder in Google colab to train the model.
-           + logs: when training a model, it will be saved in this folder train_mask_rcnn/Mask_RCNN/logs. Paste this model in the train_mask_rcnn / logs folder to be able to inspect the model 
+           + logs: when training a model, it will be saved in this folder train_mask_rcnn/Mask_RCNN/logs. Paste this model in the train_mask_rcnn/logs folder to be able to inspect the model 
            + Mask_RCNN: files needed to Ethoflow run instance segmentation model.
            + Inspect_trained_model: notebook to check the trained model
            + Train_instance_segmentation: notebook to train  instance segmentation model
            
-       + complex_behavior: folder with files to train the model in recognition complex behavior
+       + complex_behavior: folder with files to train the model in complex behavior recognition
            + cnn: it contains a notebook to train the model, a file with necessary functions and data example
-           + train_imgs_behavior: example of data about complex behavior (trophallaxis) in stingless bee *Melipona quadrifasciata*
+           + train_imgs_behavior: where training data is saved. It contains example of data about complex behavior (trophallaxis) in stingless bee *Melipona quadrifasciata*
            
        + utils: it contains files with functions to run into Ethoflow
        
