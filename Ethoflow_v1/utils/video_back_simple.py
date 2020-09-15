@@ -39,7 +39,7 @@ def colour_to_thresh(frame,threshold,kernel,kernel1,thr_option):
     gray_nor=(gray_nor-gray_nor.min())/(gray_nor.max()-gray_nor.min())*255
     gray_nor = np.uint8(gray_nor)
                 
-    R=cv2.medianBlur(gray_nor,3)
+    R=cv2.medianBlur(gray_nor,5)
     #R = cv2.blur( R,(21,17))
     
     

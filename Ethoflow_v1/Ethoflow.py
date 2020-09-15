@@ -143,7 +143,7 @@ class AppWindow(QtWidgets.QTabWidget):
         
         
         self.kernel= cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(5,5))    
-        self.kernel1= cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(3,3))
+        self.kernel1= cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(5,5))
         
         
         
