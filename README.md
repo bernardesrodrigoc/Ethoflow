@@ -53,7 +53,7 @@ This repository contains
       
       
       + make_mask_rcnn_data: files to generate training data for the instance segmentation model with an heuristic 
-           + backgorunds: folder where random backgrounds should be placed to Ethoflow get.
+           + backgrounds: folder where random backgrounds should be placed to Ethoflow get.
            + mask_imgs: folder where Ethoflow saves the images to train instance segmentation model
            + mask_video_tests: video example to Ethoflow run heurist and to test after training
            + train: examples of the images generate to train Ethoflow to recognize bees (*Melipona quadrifasciata*) in random background
