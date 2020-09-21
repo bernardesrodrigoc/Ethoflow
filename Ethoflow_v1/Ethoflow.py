@@ -170,10 +170,8 @@ class AppWindow(QtWidgets.QTabWidget):
         
         
 ## global variables for mask
-        #self.custom_WEIGHTS_PATH = "mask_rcnn/logs/bee20190824T2037/mask_rcnn_bee_0001.h5"
-        self.custom_WEIGHTS_PATH = "mask_rcnn/logs/bee20190824T2037/mask_rcnn_bee_0024.h5"
         
-        
+        self.custom_WEIGHTS_PATH = "mask_rcnn/logs/mask_rcnn_bee_0024.h5"
 
         self.MODEL_DIR = "mask_rcnn/logs"
         
@@ -189,7 +187,7 @@ class AppWindow(QtWidgets.QTabWidget):
             IMAGES_PER_GPU = 1
         self.config = InferenceConfig()
         
-        DEVICE = "/gpu:0"  # /cpu:0 or /gpu:0
+        DEVICE = "/cpu:0"  # /cpu:0 or /gpu:0
         with tf.device(DEVICE):
             self.model_mask = modellib.MaskRCNN(mode="inference", model_dir=self.MODEL_DIR,
                                               config=self.config  )
@@ -2601,11 +2599,11 @@ class AppWindow(QtWidgets.QTabWidget):
         
         self.capturing = True
         
-        if not os.path.exists('./complex_behavior/train_imgs_behaviour/1/'):
-            os.makedirs('./complex_behavior/train_imgs_behaviour/1/')
+        if not os.path.exists('./complex_behavior/train_imgs_behavior/1/'):
+            os.makedirs('./complex_behavior/train_imgs_behavior/1/')
             
-        if not os.path.exists('./complex_behavior/train_imgs_behaviour/2/'):
-            os.makedirs('./complex_behavior/train_imgs_behaviour/2/')                     
+        if not os.path.exists('./complex_behavior/train_imgs_behavior/2/'):
+            os.makedirs('./complex_behavior/train_imgs_behavior/2/')                     
         
         cap = cv2.VideoCapture(self.filename)       
         
@@ -2762,11 +2760,11 @@ class AppWindow(QtWidgets.QTabWidget):
                     #estimated_body_lengths[i] >= self.min_len_est and estimated_body_lengths[i] <= self.max_len_est and areas[i] >= self.min_area_est and areas[i] <= self.min_area_est
                     if estimated_body_lengths[i] >= self.min_len_est and estimated_body_lengths[i] <= self.max_len_est and areas[i] >= self.min_area_est and areas[i] <= self.max_area_est:
                               
-                        cv2.imwrite('./complex_behavior/train_imgs_behaviour/1/' +str(len(beh1_countours))+'.png', miniframes[i])
+                        cv2.imwrite('./complex_behavior/train_imgs_behavior/1/' +str(len(beh1_countours))+'.png', miniframes[i])
                         beh1_countours.append(contours[i])
                     else:
                         if len(beh2_countours) < int(self.ui.n_behaviour_2.text()):
-                            cv2.imwrite('./complex_behavior/train_imgs_behaviour/2/' +str(len(beh2_countours))+'.png', miniframes[i])
+                            cv2.imwrite('./complex_behavior/train_imgs_behavior/2/' +str(len(beh2_countours))+'.png', miniframes[i])
                             beh2_countours.append(contours[i])
                     
                                        

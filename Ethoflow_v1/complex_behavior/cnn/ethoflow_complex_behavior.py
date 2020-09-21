@@ -51,13 +51,13 @@ import itertools
 
 def getdata (classes,pathbehavior,pathnonbehavior):
 
-    trofalax_f =pathbehavior
-    non_trofalax_f =pathnonbehavior
+    behavior =pathbehavior
+    non_behavior =pathnonbehavior
     
    
     
     # grab the image paths and randomly shuffle them
-    imagePaths = sorted(trofalax_f + non_trofalax_f)
+    imagePaths = sorted(behavior + non_behavior)
     #random.seed(42)
     random.shuffle(imagePaths)
     
@@ -74,7 +74,7 @@ def getdata (classes,pathbehavior,pathnonbehavior):
         #image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     
         #print(imagePath)
-        #image = cv2.resize(image, (IMAGE_SIZE, IMAGE_SIZE))
+        image = cv2.resize(image, (124, 124))
         
         image = img_to_array(image)
         data.append(image)
@@ -151,10 +151,10 @@ def run_network (model_path,model_history,testX, trainX, testY, trainY):
 
     checkpoint = ModelCheckpoint(model_path, monitor='val_acc', verbose=1, save_best_only=True,
                                  save_weights_only=False, mode='auto', period=1)
-    early = EarlyStopping(monitor='val_acc', min_delta=0, patience=20, verbose=1, mode='auto')
+    early = EarlyStopping(monitor='val_acc', min_delta=0, patience=15, verbose=1, mode='auto')
     
     H = model.fit_generator(aug.flow(trainX, trainY,batch_size=5), validation_data=(testX, testY),
-                            steps_per_epoch=int(len(trainX)/3),epochs = 5, verbose=1 ,callbacks =[checkpoint, early])
+                            steps_per_epoch=int(len(trainX)/3),epochs = 100, verbose=1 ,callbacks =[checkpoint, early])
     
     
     
