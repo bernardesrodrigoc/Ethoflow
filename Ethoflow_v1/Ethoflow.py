@@ -92,9 +92,7 @@ class AppWindow(QtWidgets.QTabWidget):
         super().__init__()
         self.ui = Ui_ethoflow() 
         self.ui.setupUi(self)
-################################# Desenvolver a partir daqui ############################ 
-      
-# Função para os botões
+
         
 ## bottons for configuration
         self.ui.upload_video.clicked.connect(self.upload_file_name)
