@@ -1,10 +1,16 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'gui_new.ui'
-#
-# Created by: PyQt5 UI code generator 5.12.3
-#
-# WARNING! All changes made in this file will be lost!
+"""
+See readme for information about this file.
+Ethoflow: computer vision and artificial intelligence-based software for automatic behavior analysis
+v 1.0
+
+DOI: 10.1101/2020.07.23.218255
+LicenseCC BY-NC-ND 4.0
+
+@developer: Rodrigo Cupertino Bernardes
+https://www.researchgate.net/profile/Rodrigo_Cupertino_Bernardes
+"""
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
