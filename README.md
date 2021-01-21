@@ -24,6 +24,12 @@ Authors:
   
   __________________________________________________________________
   ## Getting started
+  
+  We recommend accessing the website to download the software. In addition, there are tutorial videos showing how to configure the software:
+  
+  [Click here to go to the Ethoflow website](https://sites.google.com/view/ethoflow/home)
+  
+  
   To use graphics processing unit (GPU), install (recommended version for windows 10):
   
   +[CUDA 10](https://developer.nvidia.com/cuda-10.0-download-archive) and [CUDNN 7.4](https://developer.nvidia.com/rdp/cudnn-archive)
