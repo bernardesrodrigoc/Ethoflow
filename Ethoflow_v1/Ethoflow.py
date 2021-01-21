@@ -53,7 +53,7 @@ from utils import video_back_simple
 #### mask
 import os
 import platform
-import winsound
+#import winsound
 
 import sys
 import re
@@ -1326,15 +1326,16 @@ class AppWindow(QtWidgets.QTabWidget):
         
         
         if self.ui.check_end_video.isChecked():
+            print("\a")
             
-            if platform.system() == "Windows":                
-                winsound.Beep(self.freq, self.duration)
+            #if platform.system() == "Windows":                
+             #   winsound.Beep(self.freq, self.duration)
                 
-            elif platform.system() == "linux" or platform.system() == "linux2":                
-                os.system('play -nq -t alsa synth {} sine {}'.format(self.duration/1000, self.freq))
+            #elif platform.system() == "linux" or platform.system() == "linux2":                
+             #   os.system('play -nq -t alsa synth {} sine {}'.format(self.duration/1000, self.freq))
                 
-            else:
-                print("\a")
+            #else:
+             #   print("\a")
             
            
         
@@ -1803,7 +1804,8 @@ class AppWindow(QtWidgets.QTabWidget):
         
         
         if self.ui.check_end_video.isChecked():
-            os.system('play -nq -t alsa synth {} sine {}'.format(self.duration, self.freq))            
+            print("\a")
+            #os.system('play -nq -t alsa synth {} sine {}'.format(self.duration, self.freq))            
         
     
         
@@ -2152,8 +2154,8 @@ class AppWindow(QtWidgets.QTabWidget):
         
         
         if self.ui.check_end_video.isChecked():
-            
-            os.system('play -nq -t alsa synth {} sine {}'.format(self.duration, self.freq))
+            print("\a")
+            #os.system('play -nq -t alsa synth {} sine {}'.format(self.duration, self.freq))
             
            
         
@@ -3050,8 +3052,8 @@ class AppWindow(QtWidgets.QTabWidget):
         
         cap.stop()
         
-        
-        os.system('play -nq -t alsa synth {} sine {}'.format(self.duration, self.freq))
+        print("\a")
+        #os.system('play -nq -t alsa synth {} sine {}'.format(self.duration, self.freq))
         
         cv2.destroyAllWindows()
         
