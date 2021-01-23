@@ -1,5 +1,5 @@
-<img src="https://lh3.googleusercontent.com/DnmJ3mY5NRdQmQwRs8ITyPHc95YWIdFLO_vSA2U7XS2k3Nr3eo0HmNxW58N1ozTbW5CRXUKD0w=w16383" alt="Ethoflow" width="350"
-         height="90"></b></marquee>
+<img src="https://github.com/bernardesrodrigoc/Ethoflow/blob/master/Ethoflow_v1/images/icon/logo_ethoflow.png" alt="Ethoflow" width="350"
+         height="85"></b></marquee>
 
 
 
